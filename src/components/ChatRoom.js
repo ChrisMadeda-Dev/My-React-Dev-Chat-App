@@ -133,3 +133,10 @@ const ChatRoom = () => {
 };
 
 export default ChatRoom;
+
+
+/*
+git remote add origin https://github.com/ammedia-dev/amchat4.git
+git branch -M main
+git push -u origin main
+*/
