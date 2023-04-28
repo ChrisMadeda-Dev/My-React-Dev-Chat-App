@@ -7,7 +7,7 @@
   height: 10vh;
   background-color: whitesmoke;
   border-bottom: 5px solid white;
-  border-top: 5px solid "";
+  border-top: 5px solid "whitesmoke";
   border-radius: 10px 10px 0px 0px;
   display: flex;
   justify-content: center;

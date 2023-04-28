@@ -56,7 +56,7 @@
 }
 
 .chat-box > header > section > span {
-  margin: 10px;
+  margin: 5px;
   width: 40px;
   height: 40px;
   background-color: teal;
@@ -111,9 +111,14 @@
     height: 98vh;
   }
 
+  .chat-box>header{
+    padding: 0px 10px;
+  }
+
   .chat-box>div>.message{
     width: 70%;
-    
+    min-height: 50px;
+    max-height: auto;
   }
 
   .chat-box>div>.message-right{
