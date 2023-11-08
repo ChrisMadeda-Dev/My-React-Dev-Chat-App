@@ -26,6 +26,7 @@ function Message({ msg }) {
 }
 
 const ChatRoom = () => {
+   const [text, setText] = useState();
   const [reloadChat, setReloadChat] = useState(false);
   const userName = localStorage.getItem("user-name");
   const userNum = parseFloat(localStorage.getItem("user-phone"));
@@ -53,7 +54,7 @@ const ChatRoom = () => {
         "hey are you hey how are you hey how are you hey how are you hey how are you hey how are you hey how are you",
     },
   ]);
-  const [text, setText] = useState();
+ 
 
   useEffect(() => {
     function getMsgs() {
@@ -67,6 +68,7 @@ const ChatRoom = () => {
       const array = [];
       getDocs(msgsRef).then((docs) => {
         docs.forEach((doc) => {
+          console.log(doc.data())
           array.push(doc.data());
         });
         setMsgs([...array]);
@@ -78,7 +80,7 @@ const ChatRoom = () => {
 
   function addMsg() {
     //Checks for recepients number
-    if (resNum) {
+    if (resNum && text!="") {
       const outText = {
         senderName: userName,
         senderPhone: userNum,
@@ -91,6 +93,8 @@ const ChatRoom = () => {
       //add msgs to db
       addDoc(resMsgCol, outText);
       addDoc(userMsgCol, outText);
+
+      setText("");
 
       //setMsgs([...msgs, outText]);
       setText("");

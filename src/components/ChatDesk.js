@@ -49,9 +49,9 @@ const ChatDesk = () => {
       //Get details from db an check
       getDoc(resDet).then((snap) => {
         if (snap.exists()) {
-          const resKeyDb = snap.data().key;
+          const resKeyDb = parseFloat(snap.data().key)-9901;
           if (resKeyDb === parseFloat(resKey)) {
-            localStorage.setItem("res-num", resNum2);
+            localStorage.setItem("res-num", snap.data().phone);
             localStorage.setItem("res-name", snap.data().name);
 
             setChatState(true);
