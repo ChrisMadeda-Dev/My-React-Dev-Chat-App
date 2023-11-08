@@ -71,12 +71,12 @@ const SignIn = () => {
     }
   }
 
-  function logInUser() {
+  async function logInUser() {
     if (phone && pin && phone.length === 9) {
       setPhone2(phone * 1099);
       const userRef = doc(db, `users/${phone2}`);
 
-      getDoc(userRef).then((snap) => {
+      await getDoc(userRef).then((snap) => {
         if (snap.exists()) {
           if (snap.data().pin === pin) {
             localStorage.setItem("user-name", snap.data().name);
