@@ -50,7 +50,7 @@ const ChatRoom = () => {
     {
       name: "james",
       message:
-        "hey how are you hey how are you hey how are you hey how are you hey how are you hey how are you hey how are you hey how are you hey how are you hey how are you hey how are you hey how are you",
+        "hey are you hey how are you hey how are you hey how are you hey how are you hey how are you hey how are you",
     },
   ]);
   const [text, setText] = useState();

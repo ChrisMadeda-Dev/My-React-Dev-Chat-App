@@ -1,16 +1,15 @@
 import { initializeApp } from "firebase/app";
 
-
 const firebaseConfig = {
-  apiKey: "AIzaSyBsQk_Jxu8G1vcjY5xe2nPRuFM68t0qpP4",
-  authDomain: "amchat4-e4402.firebaseapp.com",
-  projectId: "amchat4-e4402",
-  storageBucket: "amchat4-e4402.appspot.com",
-  messagingSenderId: "860274812135",
-  appId: "1:860274812135:web:2bfd6567d69da52b172e42"
+  apiKey: "AIzaSyDYKM2NIiJVjso0yLK32QPdQRp0JknJLAY",
+  authDomain: "mydevchatapp.firebaseapp.com",
+  projectId: "mydevchatapp",
+  storageBucket: "mydevchatapp.appspot.com",
+  messagingSenderId: "182885861375",
+  appId: "1:182885861375:web:8ece3cc52b2f32b31bc9ca",
 };
 
-
+// Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
-export default app
+export default app;
