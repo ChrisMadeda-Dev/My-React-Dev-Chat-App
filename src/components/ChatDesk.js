@@ -78,6 +78,7 @@ const ChatDesk = () => {
 
     if (a === "yes") {
       localStorage.clear();
+      window.location.href="/"
       alert("Your logged out successfully, see you soon");
     } else {
       alert("log out is canceled");

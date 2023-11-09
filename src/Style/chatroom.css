@@ -36,12 +36,13 @@
 
 .chat-room-page {
   background: linear-gradient(lightgreen, teal);
+  background: #1b1b1b;
 }
 
 .chat-box {
-  width: 90%;
+  width: 80%;
   height: 100%;
-  background-color: beige;
+  background-color: #353639;
   border-radius: 20px;
 }
 

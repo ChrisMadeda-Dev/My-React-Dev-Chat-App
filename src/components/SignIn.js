@@ -56,6 +56,7 @@ const SignIn = () => {
       setToggle(!toggle);
 
       alert("Thank you for joining amchat40");
+      window.location.href="/ChatDesk"
       alert("Go to chat page : CLick the button to get started");
     } else {
       pin !== pin2 && alert("Confirm if Pin Matches");
@@ -83,6 +84,7 @@ const SignIn = () => {
             localStorage.setItem("user-phone", phone2);
 
             alert("Welcome back, Great to have you again");
+            window.location.href="/"
             setToggle(!toggle);
           } else {
             alert("Please confirm your pin");
